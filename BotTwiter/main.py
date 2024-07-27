@@ -44,7 +44,7 @@ def post_tweet():
     except Exception as e:
         print(f"Algo deu erro: {e}")
 
-schedule.every().day.at("13:40").do(post_tweet)
+schedule.every().day.at("14:00").do(post_tweet)
 schedule.every().day.at("18:00").do(post_tweet)
 
 while True:
